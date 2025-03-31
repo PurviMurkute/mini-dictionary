@@ -34,7 +34,7 @@ function displayMeaning(){
     displayWord.innerText = word;
     const displayMeaning = document.getElementById("display-meaning");
     if(word === ""){
-        displayMeaning.innerText = "Please First Type Word";
+        displayWord.innerText = "Please First Type Word";
     }else if(meaning){
         displayMeaning.innerText = meaning;
     }else{

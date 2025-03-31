@@ -14,7 +14,7 @@ body{
     display: block;
     margin: 50px auto;
     background-color: rgb(0, 0, 0, 0.3);
-    width: 400px;
+    width: 30%;
 }
 .searchBox-container{
     display: flex;
@@ -41,4 +41,18 @@ body{
 }
 #meaning{
     text-align: center;
+}
+
+@media screen and (max-width: 600px){
+    .container{
+        width: 70%;
+    }
+    .search-box{
+        font-size: 15px;
+        padding: 5px 10px;
+    }
+    .search-icon{
+        width: 15px;
+        height: 15px;
+    }
 }
