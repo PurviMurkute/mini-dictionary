@@ -33,6 +33,13 @@ function displayMeaning(){
     const displayWord = document.getElementById("display-word");
     displayWord.innerText = word;
     const displayMeaning = document.getElementById("display-meaning");
-    displayMeaning.innerText = meaning;
+    if(word === ""){
+        displayMeaning.innerText = "Please First Type Word";
+    }else if(meaning){
+        displayMeaning.innerText = meaning;
+    }else{
+        displayMeaning.innerText = "This word not found in this dictionary.";
+    }
+    inputElement.value = "";
 }
 
